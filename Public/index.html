@@ -1,23 +1,70 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>21 Game</title>
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.3.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.3.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.3.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+
+
+
+
+</head>
+
 <body>
 
-    <h1>My First Heading</h1>
+    <h1>Guess the number</h1>
 
-    <p>My first paragraph.</p>
+    <!-- Numeric Textfield -->
+    <form action="#">
+        <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+            <label class="mdl-textfield__label" for="sample2">Number...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+    </form>
+    <!-- Accent-colored raised button with ripple -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="randomNumber()">
+        Button
+    </button>
+  
+    <p id="getnumber"></p>
+    <p id="getcloser"></p>
 
+    <hr>
+    <h1>Black Jack</h1>
+     <!-- Accent-colored raised button with ripple -->
+     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="getNumber()">
+        Get number
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        Stop
+      </button>
+    <p id="yourNumberPlace">This is your number</p>
 
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" onclick="restart()">
+        New Game
+      </button>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.3.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-
+    
+    <script src="./js/gamejava.js"> </script>
+    
 </body>
 
 </html>
