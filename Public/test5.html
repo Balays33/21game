@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./css/test5.css">
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+
+    
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+   
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+
+    
+</head>
+<body>
+    <section>
+        <h1 class="game--title">Tic Tac Toe</h1>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell" id="cell_0"></div>
+            <div data-cell-index="1" class="cell" id="cell_1"></div>
+            <div data-cell-index="2" class="cell" id="cell_2"></div>
+            <div data-cell-index="3" class="cell" id="cell_3"></div>
+            <div data-cell-index="4" class="cell" id="cell_4"></div>
+            <div data-cell-index="5" class="cell" id="cell_5"></div>
+            <div data-cell-index="6" class="cell" id="cell_6"></div>
+            <div data-cell-index="7" class="cell" id="cell_7"></div>
+            <div data-cell-index="8" class="cell" id="cell_8"></div>
+        </div>
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Restart Game</button>
+    </section>
+    <div>
+        <pre id="PrintOutInfo"></pre>
+        <pre id="currentPlayerXO"></pre>
+        <!--
+        <pre id="cell_0"></pre>
+        <pre id="cell_1"></pre>
+        <pre id="cell_2"></pre>
+        <pre id="cell_3"></pre>
+        <pre id="cell_4"></pre>
+        <pre id="cell_5"></pre>
+        <pre id="cell_6"></pre>
+        <pre id="cell_7"></pre>
+        <pre id="cell_8"></pre>
+        -->
+    </div>
+    <div>
+        <a href="index.html" class="card-link">BACK</a>
+        <p>&copy; 2020 Balazs Barcza<p>
+    </div>
+
+    <script src="./js/test5.js"></script>
+</body>
+</html>
